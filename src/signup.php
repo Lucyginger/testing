@@ -1,6 +1,5 @@
 <?php
 require_once('config.php');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,9 +21,14 @@ require_once('config.php');
             $email          = $_POST['email'];
             $password       = $_POST['password'];
 
-            $sql = "INSERT INTO users (firstname, lastname, email, password) VALUES(?,?,?,?)";
+            $sql = "INSERT INTO users (firstname, lastname, email, password ) VALUES(?,?,?,?)";
             $stmtinsert = $db->prepare($sql);
             $result = $stmtinsert->execute([$firstname, $lastname, $email, $password]);
+            if($result){
+                echo'Successfully saved.';
+            }else{
+                echo 'There were errors.';
+            }
             
         }
         ?>
