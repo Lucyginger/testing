@@ -33,65 +33,6 @@ require_once('config.php');
         }
         ?>
     </div>
-    <!-- <header>
-        <div class="container">
-            <nav class="flex-nav">
-                <div class="div-container">
-                    <img src="../img/logo.JPG" alt="" class="logo">
-                </div>
-                <div class="major-container">
-                    <div id="major">Major</div>
-                    <ul class="drop-down">
-                        <div class="major-programming">
-                            <li>Programming</li>
-                            <i class="fas fa-chevron-right"></i>
-                            <ul class="drop-down-small">
-                                <div>
-                                    <a><li>Java</li></a>
-                                </div>
-                                <div>
-                                    <a><li>Javascript</li></a>
-        
-                                </div>
-                                <div>
-                                    <a><li>Python</li></a>
-                                </div>
-                                <div>
-                                    <a><li>PHP</li></a>
-                                </div>
-                            </ul>
-                        </div>
-                        <div>
-                            <li class="major-art">Art</li>
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                        <div>
-                            <li class="major-math">Math</li>
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                        <div>
-                            <li class="major-biology">Biology</li>
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                    </ul>
-                    
-                    
-                </div>
-                <div class="icon-container">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="searchbar-container">
-                    <input type="text">
-                </div>
-                <ul class="navbar-container">
-                    <a href=""><li>About us</li></a>
-                    <a href=""><li>Upload learning resources</li></a>
-                    <a href=""id="login"><li >Login</li></a>
-                    <a href=""id="signup"><li>Sign up</li></a>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
 
     <section class="signup-booking">
         <p>Sign up and start sharing!</p>
@@ -130,5 +71,4 @@ require_once('config.php');
     </select>
 
 </body>
-<script src="../js/navbar.js"></script>
 </html>
