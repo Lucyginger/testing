@@ -25,11 +25,11 @@ require_once('config.php');
             $sql = "INSERT INTO users(firstname, lastname, email, password) VALUES(?,?,?,?)";
             $stmtinsert = $db->prepare($sql);
             $result = $stmtinsert->execute([$firstname, $lastname, $email, $password]);
-            if($result){
-                echo'Successfully saved. ';
-            } else{
-                echo'There were errors. ';
-            }
+//             if($result){
+//                 echo'Successfully saved. ';
+//             } else{
+//                 echo'There were errors. ';
+//             }
             
         }
         ?>
