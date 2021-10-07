@@ -1,16 +1,57 @@
-<form method="post" action="" name="signup-form">
-<div class="form-element">
-<label>Username</label>
-<input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
-</div>
-<div class="form-element">
-<label>Email</label>
-<input type="email" name="email" required />
-</div>
-<div class="form-element">
-<label>Password</label>
-<input type="password" name="password" required />
-</div>
-<button type="submit" name="register" value="register">Register</button>
-</form>
+<!doctype html>
+<html lang = 'en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/fullclip.min.js"></script>
+        
+
+    </head>
+
+    <body>
+
+        <header class='main'>
+            <a href="index.html"><img src="Image/Logo.png" alt = "hotel logo">
+            <nav class="menu"></a>
+                <ul>
+                    <li class='custom-select'>
+                        <select onchange="location = this.value;">
+                            <option>Language</option>
+                            <option value="cn.html">Chinese</option>
+                            <option value="index.html">English</option>
+                        </select>
+                    </li>
+                    <li class='button'><a href="book_now.html">Book Now</a></li>
+                    <li class = "menu-icon">
+                        <span onclick="openNav()">Menu <img src="Image/menu-icon.png" alt="menu icon"></span>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="stay.html">Stay</a>
+                            <a href="thing_to_do.html">Thing to do</a>
+                            <a href="eat_&_drink.html">Eat & Drink</a>
+                            <a href="offer.html">Offer</a>
+                            <a href="contact.html">Contact</a>
+                            <button id='toggle-night-mode' onclick="night()">Night Mode</button>
+                        </div>
+                        
+                        
+                        <div class='fullBackground'></div>
+                      
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+
+        
+    
+
+        
+    </body>
+</html>
 
