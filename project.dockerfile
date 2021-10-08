@@ -6,6 +6,11 @@ ENV TZ Australia/Brisbane
 ENV PHPVER=7.4
 
 RUN apt-get update \
+    && pecl install igbinary \
+	&& pecl install redis \
+	&& docker-php-ext-install mysqli \
+	&& docker-php-ext-enable redis \
+	&& echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
     && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
     && apt-get install --no-install-recommends --no-install-suggests -q -y software-properties-common \
     && apt-get update \
